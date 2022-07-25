@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/style2.css">
+    <title>JavaScript Condiciones Parte 2</title>
+</head>
+<body>
+
+    <h3 id="titulo">Puedes llevar hasta 10 Stickers en total</h3>
+
+    <section class="stickers">
+        <div class="sticker">
+            <img src="./assets/img/sticker-1.jpg" alt="Goku">
+            <input id= "input-1" type="number">
+        </div>
+        <div class="sticker">
+            <img src="./assets/img/sticker-2.jpg" alt="Maestro Rochi">
+            <input id="input-2" type="number">
+        </div>
+        <div class="sticker">
+            <img src="./assets/img/sticker-3.jpg" alt="Fondo">
+            <input id="input-3" type="number">
+        </div>              
+    </section>
+
+    <p>Llevas <span id="text-result">____________</span> stickers</p>
+
+    <button onclick="
+        input1 = document.querySelector('#input-1');
+        input2 = document.querySelector('#input-2');
+        input3 = document.querySelector('#input-3');
+        textResult = document.querySelector('#text-result');
+
+        result = Number(input1.value) + Number(input2.value) + Number(input3.value);        
+                
+        if (result > 10) {
+            textResult.innerHTML = 'demasiados';
+        }
+
+        else {
+            textResult.innerHTML= result;
+        }
+
+    ">Verificar</button>
+
+</body>
+</html>

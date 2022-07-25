@@ -1,0 +1,31 @@
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h3 {
+    text-align: center;
+}
+.stickers {
+    display: flex;
+    justify-content: center;   
+}
+
+.sticker {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0.5em;
+}
+
+.stickers img {
+    width: 250px;
+    height: 250px;
+}
+
+button {
+    width: 20%;
+}
