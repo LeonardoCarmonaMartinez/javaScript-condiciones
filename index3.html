@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/style3.css">
+    <title>JavaScript Condiciones parte 3</title>
+</head>
+<body>
+    <h1>Ingresa el password</h1>
+    <section class="pass">
+        <select id="selector1">            
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>    
+        </select>
+
+        <select id="selector2" onchange="
+            elementTwo = document.querySelector('#selector2');
+        ">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>    
+        </select>
+
+        <select id="selector3" onchange="
+            elementThree = document.querySelector('#selector3');
+        ">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>    
+        </select>
+    </section>
+    <button onclick="
+        opt1 = document.querySelector('#selector1').value;
+        opt2 = document.querySelector('#selector2').value;
+        opt3 = document.querySelector('#selector3').value
+
+        textWarning = document.querySelector('#message');
+
+        if (opt1 == 9 && opt2 == 1 &&opt3 == 1) {
+            textWarning.innerHTML = 'Password 1 correcto'
+        }
+        else if (opt1 == 7 && opt2 == 1 && opt3 == 4) {
+            textWarning.innerHTML = 'Password 2 correcto'
+        }
+        else {
+            textWarning.innerHTML = 'Password incorrecto'
+        }
+
+        
+    ">Ingresar</button>
+    <p id="message"></p>
+    
+</body>
+</html>
